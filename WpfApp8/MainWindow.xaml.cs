@@ -20,9 +20,22 @@ namespace WpfApp8
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int carCount = 0;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void enterButton_Click(object sender, RoutedEventArgs e)
+        {
+            carCount = carCount + 1;
+            countLabel.Content = Convert.ToString(carCount);
+        }
+
+        private void leavButton_Click(object sender, RoutedEventArgs e)
+        {
+            carCount = carCount - 1;
+            countLabel.Content = Convert.ToString(carCount);
         }
     }
 }

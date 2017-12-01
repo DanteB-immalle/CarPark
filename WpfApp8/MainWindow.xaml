@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="enterButton" Content="Entering" HorizontalAlignment="Left" Margin="89,143,0,0" VerticalAlignment="Top" Width="75" Background="#FF39EE27" Click="enterButton_Click"/>
+        <Button x:Name="leavButton" Content="Leaving" HorizontalAlignment="Left" Margin="335,143,0,0" VerticalAlignment="Top" Width="75" Background="#FFFF003A" Click="leavButton_Click"/>
+        <Label x:Name="countLabel" Content="  0" HorizontalAlignment="Left" Margin="207,223,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.328,0.743" Width="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="242,228,0,0" TextWrapping="Wrap" Text="cars in park." VerticalAlignment="Top" Height="21" Width="68"/>
+
     </Grid>
 </Window>
